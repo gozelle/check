@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GOPATH: ${{ github.workspace }}
-      package: gopkg.in/check.v1
+      package: github.com/gozelle/check
     steps:
       - uses: actions/setup-go@v2
         with:
