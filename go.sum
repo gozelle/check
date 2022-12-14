@@ -1,5 +1,8 @@
-github.com/kr/pretty v0.2.1 h1:Fmg33tUaq4/8ym9TJN1x7sLJnHVwhP33CNkpYV/7rwI=
-github.com/kr/pretty v0.2.1/go.mod h1:ipq/a2n7PKx3OHsz4KJII5eveXtPO4qwEXGdVfWzfnI=
-github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
-github.com/kr/text v0.1.0 h1:45sCR5RtlFHMR4UwH9sdQ5TC8v0qDQCHnXt+kaKSTVE=
-github.com/kr/text v0.1.0/go.mod h1:4Jbv+DJW3UT/LiOwJeYQe1efqtUx/iVham/4vfdArNI=
+github.com/gozelle/go-internal v1.9.0 h1:VVobf+WAesfyYtHklxbmzo+2IXdTw3PxiwkmwC6QTTA=
+github.com/gozelle/go-internal v1.9.0/go.mod h1:o484tiDnf0hnhpY4OpWLmI0eWURobX0OX3YP1CBEzbU=
+github.com/gozelle/pretty v0.3.1 h1:dtU7yIlzRqiMmB9TcunypDfvAC/QOP0K8y/BKKOrgRg=
+github.com/gozelle/pretty v0.3.1/go.mod h1:F2wDK3wv6aq2Bf70Xuu0ltUWRFZC01f0sb7OQLHtI3c=
+github.com/gozelle/pty v1.1.18/go.mod h1:SfI1d649o2MwHyGTx3gtCqh2AuntxoqVvXU0C5uIWII=
+github.com/gozelle/text v0.2.0 h1:p0p6mIm1aD0lDN798Pfx9T0itU8O/iUoauFvPUtV6Gw=
+github.com/gozelle/text v0.2.0/go.mod h1:SEbJmvp9HEs+yRjPJyNLQeRJ8dLwI3sx7cPyu/xt8fc=
+github.com/pkg/diff v0.0.0-20210226163009-20ebb0f2a09e/go.mod h1:pJLUxLENpZxwdsKMEsNbx1VGcRFpLqf3715MtcvvzbA=

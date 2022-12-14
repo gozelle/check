@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"regexp"
 	"strings"
-
-	"github.com/kr/pretty"
+	
+	"github.com/gozelle/pretty"
 )
 
 // -----------------------------------------------------------------------
@@ -164,7 +164,7 @@ func diffworthy(a interface{}) bool {
 	if a == nil {
 		return false
 	}
-
+	
 	t := reflect.TypeOf(a)
 	switch t.Kind() {
 	case reflect.Array, reflect.Map, reflect.Slice, reflect.Struct, reflect.String, reflect.Ptr:
@@ -181,7 +181,7 @@ func formatUnequal(obtained interface{}, expected interface{}) string {
 	if !diffworthy(obtained) || !diffworthy(expected) {
 		return ""
 	}
-
+	
 	// Handle strings, short strings are ignored (go-check formats
 	// them very nicely already). We do multi-line strings by
 	// generating two string slices and using kr.Diff to compare
@@ -200,7 +200,7 @@ func formatUnequal(obtained interface{}, expected interface{}) string {
 		// string too short
 		return ""
 	}
-
+	
 	// generic diff
 	diff := pretty.Diff(obtained, expected)
 	if len(diff) == 0 {
@@ -209,7 +209,7 @@ func formatUnequal(obtained interface{}, expected interface{}) string {
 		// identical values.
 		return ""
 	}
-
+	
 	return fmt.Sprintf(`Difference:
 %s`, formatMultiLine(strings.Join(diff, "\n"), false))
 }
@@ -236,7 +236,7 @@ func (checker *equalsChecker) Check(params []interface{}, names []string) (resul
 			error = fmt.Sprint(v)
 		}
 	}()
-
+	
 	result = params[0] == params[1]
 	if !result {
 		error = formatUnequal(params[0], params[1])
